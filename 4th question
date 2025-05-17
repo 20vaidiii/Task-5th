@@ -1,0 +1,11 @@
+#Write a function that takes an integer and returns the reversed number.
+#Input: 1234 → Output: 4321
+
+def reverse_number(n):
+    sign = -1 if n < 0 else 1
+    n = abs(n)
+    reversed_num = int(str(n)[::-1])
+    return sign * reversed_num
+
+print(reverse_number(1234))  
+print(reverse_number(-5678)) 

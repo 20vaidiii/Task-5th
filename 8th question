@@ -1,0 +1,20 @@
+#Write a function that prints a square number pattern with diagonals as 0, for a given size n.
+#1 2 3 4
+#5 0 0 8
+#9 0 0 12
+#13 14 15 16
+
+def print_square_pattern(n):
+    count = 1  
+    for i in range(n):
+        row = []
+        for j in range(n):
+            if i == j or i + j == n - 1:
+                row.append(0)
+            else:
+                row.append(count)
+            count += 1
+        print(' '.join(str(x).rjust(2) for x in row))
+
+
+       

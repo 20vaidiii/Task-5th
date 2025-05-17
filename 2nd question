@@ -1,0 +1,12 @@
+#Write a function that returns the LCM (Least Common Multiple) of two numbers using a loop
+
+def lcm(a, b):
+    if a > b:
+        greater = a
+    else:
+        greater = b
+    while True:
+        if greater % a == 0 and greater % b == 0:
+            return greater
+        greater += 1
+
